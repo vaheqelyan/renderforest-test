@@ -1,0 +1,6 @@
+.argumentGroup {
+  padding: 25px;
+  overflow-y: auto;
+  max-height: 300px;
+  flex: 1;
+}

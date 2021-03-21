@@ -1,0 +1,13 @@
+.argumentHeader {
+  display: flex;
+  flex-basis: 100%;
+  border-bottom: 1px solid;
+  height: 50px;
+}
+
+.argumentHeader__title {
+  padding: 10px;
+  flex: 1;
+  display: flex;
+  text-transform: uppercase;
+}

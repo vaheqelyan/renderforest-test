@@ -1,0 +1,18 @@
+.listItem {
+  display: flex;
+}
+
+.listItem:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.listItem__number {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.listItem__input {
+  border: none;
+  flex-basis: 100%;
+}
