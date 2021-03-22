@@ -34,12 +34,7 @@ const ArgumentContainer = () => {
     },
   ]);
 
-  const getItemById = useCallback(
-    id => {
-      return list.find(value => value.id === id);
-    },
-    [list],
-  );
+  const getItemById = (list, id) => list.find(value => value.id === id);
 
   const removeItem = (list, id) => list.filter(value => value.id !== id);
 
@@ -61,7 +56,7 @@ const ArgumentContainer = () => {
 
   const handleItemName = useCallback(
     (inputValue, id, groupName) => {
-      const currentItem = getItemById(id);
+      const currentItem = getItemById(list, id);
 
       if (currentItem.type === ITEM.LAST_INPUT) {
         setList(prevList =>
